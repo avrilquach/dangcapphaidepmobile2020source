@@ -39,7 +39,9 @@ a:hover {
 img {
   max-width: 100%;
 }
-
+.pad0{
+  padding: 0;
+}
 .pad10_0 {
   padding: 10px 0;
 }
@@ -168,7 +170,7 @@ img {
   background-color: #fff;
 }
 #wrapper_mobile #header {
-  padding: 17px 0;
+  padding: 7px 0;
   background: #FFFFFF;
   box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -191,7 +193,7 @@ img {
   color: #000;
   position: absolute;
   left: 15px;
-  top: 18px;
+  top: 5px;
 }
 #wrapper_mobile #header.header-ctdh .menu-right span {
   width: 5px;
@@ -483,10 +485,10 @@ img {
   margin: 0;
 }
 #wrapper_mobile .products.cate ul li.swiper-slide:nth-child(odd) {
-  margin: 2% 2% 1% 0;
+  margin: 0 1% 0 0;
 }
 #wrapper_mobile .products.cate ul li.swiper-slide:nth-child(even) {
-  margin: 2% 0 1% 2%;
+  margin: 0 0 0 2%;
 }
 #wrapper_mobile .products .banner-product {
   margin-bottom: 10px;
@@ -1693,12 +1695,12 @@ img {
 }
 #wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a:nth-child(1) {
   background-color: #f3f5fc;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #005aa9;
 }
 #wrapper_mobile .cart .list-cart .cart_options .tong-cong .col_2 a:nth-child(2) {
   background-color: #fe2c6d;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
 }
 #wrapper_mobile .cart .list-cart .cart_options .giam-gia-form .head-item {
@@ -1791,7 +1793,7 @@ img {
   width: 100%;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #848484;
   color: #848484;
   padding: 0 160px 0 10px;
   font-size: 14px;
@@ -3000,7 +3002,8 @@ img {
   align-items: center;
 }
 #wrapper_mobile #footer-new .footer-copyright ul li {
-  margin: 0 5px;
+  margin: 0 10px;
+  width: 24px;
 }
 #wrapper_mobile #footer-new .footer-top {
   background: #535252;
@@ -5383,7 +5386,7 @@ img {
 .main-information .item {
   border: 1px solid #353535;
   background: #FFFFFF;
-  height: 100px;
+  height: 80px;
   border-radius: 5px;
 }
 .main-information .item img {
@@ -5583,7 +5586,7 @@ img {
   font-weight: 300;
   color: #6F6F6F;
   padding: 0 10px;
-  height: 45px;
+  height: 40px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -5726,7 +5729,7 @@ img {
 }
 .reviewvote .send-comment {
   width: 300px;
-  height: 50px;
+  height: 40px;
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 40px;
@@ -6056,7 +6059,7 @@ img {
   border-radius: 30px;
   padding: 3px 10px;
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   color: #000000;
 }
@@ -6067,7 +6070,7 @@ img {
 }
 .detail .number {
   height: 36px;
-  width: 90px;
+  width: 65px;
   text-align: center;
   text-align-last: center;
   background: #FFFFFF;
@@ -6998,7 +7001,7 @@ img {
   border: none;
 }
 .thong_tin_tai_khoan .label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: #616161;
   margin-bottom: 5px;
@@ -7012,7 +7015,7 @@ img {
 }
 .thong_tin_tai_khoan .macdinh {
   position: absolute;
-  top: 26px;
+  top: 23px;
   right: 0;
   background: #106909;
   border: 1px solid #CECECE;
@@ -7848,7 +7851,7 @@ img {
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
-  padding: 10px;
+  padding: 3px 0px;
   display: inline-block;
 }
 .tag a.xtc {
@@ -7880,8 +7883,8 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 5px;
-  height: 52px;
+  padding: 4px;
+  height: 30px;
 }
 .tag ul li a.black {
   background: linear-gradient(90.33deg, #C7C7C7 3.36%, #9B9B9B 97.72%);
@@ -8012,8 +8015,8 @@ img {
   font-size: 13px;
   text-align: center;
   color: #FFFFFF;
-  padding: 20px;
-  height: 78px;
+  padding: 5px;
+  height: 47px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
 }
@@ -8136,6 +8139,7 @@ img {
   width: 54px;
   height: 54px;
   border-radius: 50%;
+  border: 1px solid #e0e0e0;
 }
 .feed .center .baiviet .top .nameproduct {
   background: #FFFFFF;
