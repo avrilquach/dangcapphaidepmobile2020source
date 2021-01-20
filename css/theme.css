@@ -7273,7 +7273,7 @@ img {
   padding: 15px 0;
   margin-right: 15px;
 }
-.quan_ly_don_hang .top ul li:hover {
+.quan_ly_don_hang .top ul li:hover, .quan_ly_don_hang .top ul li.active {
   border-bottom: 1px solid #FF326C;
 }
 .quan_ly_don_hang .top ul li a {
@@ -7849,7 +7849,7 @@ img {
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
-  padding: 3px 0px;
+  padding: 3px 0px 10px 0;
   display: inline-block;
 }
 .tag a.xtc {
@@ -8029,7 +8029,7 @@ img {
   width: 33.33%;
   margin-right: 15px;
 }
-.feed .top ul li:hover a {
+.feed .top ul li:hover a, .feed .top ul li.active a {
   border-bottom: 1px solid #FF326C;
 }
 .feed .top ul li a {
