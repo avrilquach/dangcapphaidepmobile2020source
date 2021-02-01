@@ -5466,6 +5466,7 @@ img {
 }
 .comments-area .replay {
   margin-top: 10px;
+  clear: both;
 }
 .comments-area .replay a {
   margin: 0 10px 10px 0;
@@ -5782,10 +5783,15 @@ img {
 .popup-gallery {
   margin-top: 10px;
 }
+.popup-gallery a {
+  width: 32.33%;
+  float: left;
+  margin-right: 1%;
+}
 .popup-gallery img.gallery2 {
   margin: 0 10px 10px 0;
-  width: 95px;
-  height: 78px;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
 }
 
@@ -6014,6 +6020,14 @@ img {
 .detail .promotions li .img {
   height: 20px;
   margin-bottom: 10px;
+}
+.detail .promotions .text{
+  height: 42px;
+  overflow: hidden;
+}
+.detail .promotions .text:hover{
+  height: auto;
+  overflow: auto;
 }
 .detail .promotions .text span {
   font-size: 12px;
