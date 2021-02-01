@@ -5879,20 +5879,20 @@ img {
   line-height: 1;
 }
 .detail.thongtinsanpham .show-data {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -1%, #FFFFFF 100%);
+  background: #fff;
   border-radius: 5px;
-  height: 100px;
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
-  padding-bottom: 30px;
+  padding: 15px;
 }
 .detail.thongtinsanpham .show-data a {
-  border: 0.5px solid #000000;
+  border: 0.5px solid #007BFF;
   border-radius: 5px;
-  width: 260px;
+  width: 100%;
   height: 40px;
+  color: #007BFF;
 }
 .detail .mua-chung {
   text-align: center;
