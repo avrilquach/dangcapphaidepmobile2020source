@@ -7875,6 +7875,7 @@ img {
 .tag ul {
   padding-bottom: 5px;
   display: inline-block;
+  width: 100%;
 }
 .tag ul li {
   display: flex;
@@ -7898,6 +7899,10 @@ img {
   padding: 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.tag ul li:hover a, .tag ul li.active a{
+  background: #F2F2F2 !important;
+  color: #222222 !important;
 }
 .tag ul li a.black {
   background: linear-gradient(90.33deg, #C7C7C7 3.36%, #9B9B9B 97.72%);
