@@ -7896,7 +7896,8 @@ img {
   justify-content: center;
   text-align: center;
   padding: 4px;
-  height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .tag ul li a.black {
   background: linear-gradient(90.33deg, #C7C7C7 3.36%, #9B9B9B 97.72%);
