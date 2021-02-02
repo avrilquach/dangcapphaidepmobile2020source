@@ -6534,6 +6534,9 @@ img {
   background: #fff;
   padding: 10px;
   position: relative;
+  z-index: 6;
+  display: inline-block;
+  width: 100%;
 }
 .category .middle-category ul.top {
   position: relative;
@@ -6585,16 +6588,26 @@ img {
 .category .middle-category .open {
   display: none;
   position: absolute;
-  border-top: 0.5px solid #CBCBCB;
+  border-top:   0.5px solid #CBCBCB;
   background: #fff;
   left: 0;
   z-index: 2;
-  top: 44px;
+  top: -1px;
   padding: 15px 0;
   width: 100%;
 }
+.category .bg-category{
+  position: fixed;
+  background:rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
 .category .middle-category .open.active {
   display: block;
+  position: relative;
 }
 .category .middle-category .open .box-filter-3 label {
   padding-left: 0;

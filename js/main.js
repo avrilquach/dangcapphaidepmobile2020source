@@ -307,6 +307,7 @@ $(document).ready(function() {
         $(".mua-chung .xct").show();
     })
     $(".category .middle-category li").click(function(e) {
+        $(".bg-category").show();
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
 			$(".category .middle-category .open").removeClass("active");
@@ -323,6 +324,12 @@ $(document).ready(function() {
 				$(".middle-category ul.top li").find("img").attr("src", "img/arrowdowncate3.svg")
 			}
 		}
+    })
+    $(".bg-category").click(function(e){
+        $(this).hide();
+        $(".middle-category ul.top li").removeClass("active");
+        $(".middle-category .open").removeClass("active");
+        $(".middle-category ul.top li img").attr("src", "img/arrowdowncate.svg");
     })
     $(".dm").click(function(e) {
         var id = $(this).attr("class");
