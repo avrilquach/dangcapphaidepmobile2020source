@@ -310,7 +310,8 @@ $(document).ready(function() {
         $(".bg-category").show();
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
-			$(".category .middle-category .open").removeClass("active");
+            $(".category .middle-category .open").removeClass("active");
+            $(".bg-category").hide();
 		}
 		else{
 			$(".category .middle-category li").removeClass("active");
@@ -334,16 +335,28 @@ $(document).ready(function() {
     $(".dm").click(function(e) {
         var id = $(this).attr("class");
         $("#" + id).addClass("active");
+        setTimeout(() => {
+            $(".sidebar_thuonghieu").css("bottom",0);
+        },500);
     })
     $(".loc").click(function(e) {
         var id = $(this).attr("class");
         $("#" + id).addClass("active");
+        setTimeout(() => {
+            $(".sidebar_thuonghieu").css("bottom",0);
+        },500);
     })
     $(".close2").click(function(e) {
         $(".box-bottom").removeClass("active");
+        setTimeout(() => {
+            $(".sidebar_thuonghieu").css("bottom",'-100%');
+        },500);
     })
     $(".back2").click(function(e) {
         $(".box-bottom").removeClass("active");
+        setTimeout(() => {
+            $(".sidebar_thuonghieu").css("bottom",'-100%');
+        },500);
     })
     $(".thong_tin_tai_khoan .box").click(function(e) {
         $(this).toggleClass("active");
