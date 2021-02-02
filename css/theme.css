@@ -195,7 +195,7 @@ img {
   color: #000;
   position: absolute;
   left: 15px;
-  top: 5px;
+  top: 8px;
 }
 #wrapper_mobile #header.header-ctdh .menu-right span {
   width: 5px;
@@ -6312,7 +6312,7 @@ img {
 }
 .box-bottom .bg .box-filter {
   overflow: scroll;
-  height: 100%;
+  height: calc(100% - 130px);
   padding-bottom: 10px;
 }
 .box-bottom .bg .box-filter.box-fiter-price .box-filter-2 {
@@ -6784,7 +6784,41 @@ img {
 .button_mobile .button2 {
   background: #FF326C;
 }
-
+.button_mobile2{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  clear: both;
+}
+.button_mobile2 .button_reset{
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  width: 48%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  background: #fff;
+}
+.button_mobile2 .button_apply{
+  outline: none;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  width: 48%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
 .arrow-right-mobile {
   background: url("../img/arrright_mobile.svg") right center no-repeat;
 }
