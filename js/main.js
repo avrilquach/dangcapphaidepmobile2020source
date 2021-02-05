@@ -392,5 +392,13 @@ $(document).ready(function() {
 			$(".tag .xtc").html("Rút gọn");
 			$(this).addClass("active");
 		}
-	})
+    })
+    $(".search-page-mobile .form input").keyup(function() {
+        $(".search-page-mobile .box-search").show();
+        $(".search-page-mobile .box-open").hide();
+      });
+      $(".search-page-mobile .box-open li").click(function(e){
+          var text = $(this).html();
+          $(".search-page-mobile .form input").val(text);
+      })
 });

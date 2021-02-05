@@ -8301,7 +8301,7 @@ img {
   display: inline-block;
   width: 100%;
   padding: 20px;
-  height: 100vh;
+  height: 1000px;
 }
 .search-page-mobile .box-open {
   margin-top: 30px;
@@ -8364,4 +8364,55 @@ img {
   position: absolute;
   left: 15px;
   top: 12px;
+}
+.search-page-mobile .box-search{
+  background: #FFFFFF;
+  border-radius: 5px;
+  z-index: 10;
+  display: none;
+}
+.search-page-mobile .box-search .tim-thuong-hieu, .search-page-mobile .box-search .tim-danh-muc{
+  padding: 15px 0px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.search-page-mobile .box-search .tim-thuong-hieu li, .search-page-mobile .box-search .tim-danh-muc li{
+  margin: 5px 0;
+}
+.search-page-mobile .box-search .tim-thuong-hieu span, .search-page-mobile .box-search .tim-danh-muc span{
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
+.search-page-mobile .box-search .tim-thuong-hieu a, .search-page-mobile .box-search .tim-danh-muc a{
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  margin: 0 5px;
+}
+.search-page-mobile .box-search .tim-san-pham li{
+  margin: 10px 0;
+}
+.search-page-mobile .box-search .tim-san-pham li a{
+  display: flex;
+  align-items: center;
+}
+.search-page-mobile .box-search .tim-san-pham li a img{
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}
+.search-page-mobile .box-search .tim-san-pham li a span{
+  font-size: 15px;
+  color: #212121;
+}
+.search-page-mobile .box-search .tim-san-pham a.xtc{
+  background: #F5F5F5;
+  border: 1px solid #E3E3E3;
+  border-radius: 20px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  margin: 15px auto ;
 }
