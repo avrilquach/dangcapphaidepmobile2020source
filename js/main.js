@@ -306,7 +306,7 @@ $(document).ready(function() {
         $(".mua-chung .tg").hide();
         $(".mua-chung .xct").show();
     })
-    $(".category .middle-category li").click(function(e) {
+    $(".category .middle-category .top li").click(function(e) {
         $(".bg-category").show();
 		if($(this).hasClass("active")){
 			$(this).removeClass("active");
@@ -401,4 +401,11 @@ $(document).ready(function() {
           var text = $(this).html();
           $(".search-page-mobile .form input").val(text);
       })
+    $(".alpha ul li").click(function(e){
+        $(".category .middle-category .alpha ul li").removeClass("active");
+        $(".category .middle-category .open .box-filter .box-filter-4 div").removeClass("active");
+        $(this).addClass("active");
+        var id = $(this).attr("id");
+        $("."+id).addClass("active");
+    })
 });

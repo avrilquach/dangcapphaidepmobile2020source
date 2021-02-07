@@ -6582,6 +6582,11 @@ img {
   float: left;
   margin: 5px 1%;
   padding: 8px 0;
+  text-align: center;
+}
+.category .middle-category .alpha ul li.active{
+  background: #6F6E6E;
+  color: #fff;
 }
 .category .middle-category .alpha ul li a {
   display: flex;
@@ -6623,6 +6628,12 @@ img {
   top: -1px;
   padding: 15px 0;
   width: 100%;
+}
+.category .middle-category .open .box-filter .box-filter-4 .ct{
+  display: none;
+}
+.category .middle-category .open .box-filter .box-filter-4 .active .ct{
+  display: block;
 }
 .category .bg-category{
   position: fixed;
