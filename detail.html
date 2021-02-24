@@ -553,7 +553,17 @@
           <li><a href="#">Kinh nghiệm làm đẹp</a></li>
         </ul>
       </div>
+      <div class="popup-pro">
+        <div class="close">
+          <img src="img/close.png" />
+        </div>
+        <form>
+          <input type="text" name="sodienthoai" placeholder="Nhập số điện thoại để nhận mã"/>
+          <button type="submit">Nhận ngay</button>
+        </form>
+      </div>
     </div>
+   
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -566,6 +576,12 @@
       $(document).ready(function () {
         $('.gallery2').gallerybox();
         });
+        setTimeout(() => {
+          $(".popup-pro").addClass("active");
+        }, 5000);
+        $(".popup-pro .close").click(function(e){
+          $(".popup-pro").removeClass("active");
+        })
     </script>
   </body>
 </html>
