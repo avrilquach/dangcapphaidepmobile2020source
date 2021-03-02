@@ -905,6 +905,12 @@ img {
 #wrapper_mobile .detailp .gallery {
   position: relative;
 }
+#wrapper_mobile .gallery .owl-carousel{
+  display: none;
+}
+#wrapper_mobile  .gallery .owl-carousel.active{
+  display: block;
+}
 #wrapper_mobile .detailp .gallery #counter {
   position: absolute;
   background-color: #959595;
@@ -5823,9 +5829,36 @@ img {
 .khach_mua_hang table tr:nth-child(even) {
   background: #F5F5F5;
 }
-
 .gallery {
   position: relative;
+  background: #fff;
+}
+.detail .quatang{
+  margin-bottom: 20px;
+}
+.detail .quatang span{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.detail .quatang #qt{
+  width: calc(100% - 120px);
+  background: #F9F9F9;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #424242;
+  height: 40px;
+  border: #F9F9F9;
+}
+.map {
+  margin-bottom: 10px;
+}
+.map img{
+  margin-right: 10px;
+}
+.map p{
+  width: calc(100% - 20px);
 }
 .gallery #big {
   padding-top: 10px;
@@ -5851,7 +5884,7 @@ img {
   margin-bottom: 10px;
 }
 .detail .bg-giamgia {
-  background: url("../img/bggiamgia.png") no-repeat center center;
+  background: #F4F5F6 center center;
   height: 75px;
   background-size: contain;
   display: flex;
@@ -6081,6 +6114,28 @@ img {
   width: 100%;
   outline: none;
   height: 30px;
+  margin-bottom: 10px;
+}
+.detail .color {
+  margin-bottom: 20px;
+}
+.detail .color span{
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.detail .color ul li {
+  cursor: pointer;
+}
+.detail  .color ul li span{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.detail  .color ul li span.new, .detail .color ul li span.old{
+  display: none;
 }
 .detail .number {
   height: 36px;
@@ -6162,28 +6217,10 @@ img {
 .detail .size li:hover, .detail .size li.active {
   position: relative;
 }
-.detail .size li:hover a, .detail .size li.active a {
-  border: 1px solid #FE2B6D;
-  color: #FE2B6D;
-}
-.detail .size li:hover::before, .detail .size li.active::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-bottom: 20px solid #FE2B6D;
-  border-left: 20px solid transparent;
-  bottom: 1px;
-  right: 1px;
-}
-.detail .size li:hover::after, .detail .size li.active::after {
-  position: absolute;
-  background: url("../img/icon10_new.svg") no-repeat;
-  bottom: 5px;
-  right: 3px;
-  content: "";
-  width: 8px;
-  height: 6px;
+.detail .size li a:hover, .detail .size li a.active {
+  background: #FE2B6D;
+  border: #FE2B6D;
+  color: #fff;
 }
 .detail .rate {
   margin-right: 20px;

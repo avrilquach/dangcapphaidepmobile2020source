@@ -49,25 +49,6 @@ $(document).ready(function() {
         paginationClickable: true,
         spaceBetween: 0
     });
-    var owl = $('#big');
-    owl.owlCarousel({
-        autoplay: 2000,
-        items: 1,
-        loop: true,
-        onInitialized: counter,
-        onTranslated: counter,
-        dots: false
-    });
-
-    function counter(event) {
-        var element = event.target;
-        var items = event.item.count;
-        var item = event.item.index + 1;
-        if (item > items) {
-            item = item - items
-        }
-        $('#counter').html("" + item + "/" + items)
-    }
     $(".info_detailp .ctent").slice(0, 1).css("display", "flex");
     $('.read-more a').click(function(e) {
         var _this = $(this).parent().parent().parent().parent();
@@ -284,13 +265,25 @@ $(document).ready(function() {
         $(".thongtinsanpham .show-data").hide();
     })
     $(".size li").click(function(e) {
-        $(".size li").removeClass("active");
-        $(this).addClass("active");
+        var pic = $(this).attr("class");
+        $(".gallery .owl-carousel").removeClass("active");
+        $(".gallery #"+pic).addClass("active");
+        $(".size li a").removeClass("active");
+        $(this).find("a").addClass("active");
         var old = $(this).find("span.old").html();
         var data = $(this).find("span.new").html();
         $(".options .price-new").html(data);
         $(".options .price-old").html(old);
-    })
+    });
+    $(".color li").click(function(e){
+        var loadproduct = $(this).attr("class");
+        $(".gallery .owl-carousel").removeClass("active");
+        $(".gallery #"+loadproduct).addClass("active");
+        var old = $(this).find("span.old").html();
+        var data = $(this).find("span.new").html();
+        $(".options .price-new").html(data);
+        $(".options .price-old").html(old);
+      })
     $(".mua-chung input[type='checkbox']").click(function(e) {
         var id = $(this).attr("id");
         var ele = id + "_new";
