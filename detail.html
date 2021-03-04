@@ -120,10 +120,30 @@
         </div>
         <div class="quatang row align-items-center justify-content-between">
           <span>Quà tặng kèm: </span>
-          <select id="qt">
-            <option value="">Chọn một tuỳ chọn</option>
-            <option value="123">quà 1</option>
-          </select>
+          <div id="qt"><span>Chọn một tuỳ chọn <img src="img/icon9.svg" alt=""></span>
+          <div class="list-qt">
+            <div class="item">
+              <img src="img/image6.jpg" alt="">
+              <p>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</p>
+            </div>
+            <div class="item">
+              <img src="img/image6.jpg" alt="">
+              <p>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</p>
+            </div>
+            <div class="item">
+              <img src="img/image6.jpg" alt="">
+              <p>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</p>
+            </div>
+            <div class="item">
+              <img src="img/image6.jpg" alt="">
+              <p>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</p>
+            </div>
+            <div class="item">
+              <img src="img/image6.jpg" alt="">
+              <p>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</p>
+            </div>
+          </div>
+          </div>
         </div>
         <div class="bg-giamgia"><img src="img/icon17.svg" alt="">
           <p>Giảm <strong>3% </strong>khi thanh toán online, tối đa <strong>500.000đ</strong></p>
@@ -646,9 +666,12 @@
         });
         setTimeout(() => {
           $(".popup-pro").addClass("active");
-        }, 500000);
+        }, 5000);
         $(".popup-pro .close").click(function(e){
           $(".popup-pro").removeClass("active");
+        })
+        $("#qt").click(function(e){
+          $(this).toggleClass("active");
         })
     </script>
   </body>
