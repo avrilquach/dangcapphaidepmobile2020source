@@ -64,6 +64,10 @@ img {
   padding: 15px 0 0 0;
 }
 
+.padtp10_0 {
+  padding: 10px 0 0 0;
+}
+
 .padtp20_0 {
   padding: 20px 0 0 0;
 }
@@ -288,7 +292,7 @@ img {
 #wrapper_mobile #header.header-homepage .nav-search{
   padding: 10px 10px 3px 10px;
 }
-#wrapper_mobile #header.header-homepage .nav-search form{
+#wrapper_mobile #header.header-homepage .nav-search .form{
   background: #F2F2F2;
   border-radius: 5px;
   padding: 10px;
@@ -307,7 +311,7 @@ img {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: #ef55a2;
+  background-color: #FF326C;
   border-radius: 50%;
   font-size: 14px;
   width: 20px;
@@ -5836,13 +5840,12 @@ img {
   width: 100%;
 }
 .khach_mua_hang table tr td {
-  padding: 20px;
+  padding: 5px;
   border: 1px solid #DADADA;
   font-size: 16px;
   font-weight: 300;
   color: #000;
   text-align: center;
-  min-width: 200px;
 }
 .khach_mua_hang table tr td img {
   margin-right: 5px;
@@ -5888,6 +5891,22 @@ img {
   padding-top: 10px;
   background: #fff;
 }
+.gallery .owl-dot span{
+  background: #DDDDDD;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+.gallery .owl-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .owl-dot.active span{
+  background: #FFA4C0;
+}
 .gallery #counter {
   background: #C4C4C4;
   border-radius: 30px;
@@ -5900,6 +5919,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+  display: none;
 }
 
 .detail {
@@ -6134,11 +6154,10 @@ img {
   font-weight: 300;
   color: #000000;
 }
-.detail .radio audio {
+.detail .radio audio, .detail .radio {
   width: 100%;
   outline: none;
   height: 30px;
-  margin-bottom: 10px;
 }
 .detail .color {
   margin-bottom: 20px;
@@ -6246,16 +6265,18 @@ img {
   border: #FE2B6D;
   color: #fff;
 }
-.detail .rate {
-  margin-right: 20px;
+.detail .rate, .detail .comments {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #E3E3E3;
 }
 .detail .rate img {
-  margin: 0 5px;
+  margin: 0 3px;
 }
 .detail .comments, .detail .write-comment {
   font-size: 14px;
   font-weight: 300;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .detail .comments img, .detail .write-comment img {
   margin-right: 10px;

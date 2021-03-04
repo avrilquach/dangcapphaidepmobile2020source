@@ -15,9 +15,7 @@ $(document).ready(function () {
         autoplay: 2000,
         items: 1,
         loop: true,
-        onInitialized: counter,
-        onTranslated: counter,
-        dots: false
+        dots: true,
     });
   } 
     function counter(event) {

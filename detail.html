@@ -23,20 +23,36 @@
   <body class="m">
     <div id="wrapper_mobile">
       <!-- Header-->
-      <header id="header">
+      <header id="header" class=" header-homepage">
         <div class="nav-top">
           <div class="container">
             <div class="row justify-content-between align-items-center">
-              <div class="left row align-items-center"><a class="arrow" href="#"><img src="img/arrow.svg" alt=""></a><a class="logo-mobile" href="#"><img src="img/logo.svg" alt=""></a></div>
+              <div class="left row align-items-center"><div class="icon-menu menu-click"><img src="img/menu.svg" alt=""></div>
+              </div>
+              <div class="center">
+                <a class="logo-mobile" href="#"><img src="img/logo.svg" alt=""></a>
+              </div>
               <div class="right row align-items-center">
-                <div class="search"><a href="search.html"><img src="img/search.svg" alt=""></a></div>
-                <div class="cart"><img src="img/cart.svg" alt=""></div>
-                <div class="icon-menu menu-click"><img src="img/menu.svg" alt=""></div>
+                <div class="cart"><img src="img/cart.svg" alt=""><span>5</span></div>
               </div>
             </div>
           </div>
         </div>
+        <div class="nav-search">
+          <a class="form" href="search.html">
+            <img src="img/search.svg" alt="">
+            <input type="text" name='timkiem' />
+          </a>
+        </div>
       </header>
+      <div class="heading padtp10_0">
+        <div class="container">
+          <div class="map row align-items-center">
+            <img src="img/map.svg">
+            <p>Giao hàng tới PhuongAnh - 125 Quang Trung, ...</p>
+          </div>
+        </div>
+      </div>
       <div class="gallery">
         <div class="owl-carousel owl-theme active" id="big">
           <div class="item"><img class="lazy" data-src="img/product-detail.jpg"></div>
@@ -71,11 +87,10 @@
         <div id="counter"></div>
       </div>
       <div class="detail">
-        <h1>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</h1><span class="options row align-items-center"><span class="rate"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg"></span></span><span class="options row align-items-center"><span class="comments"><img src="img/comment.svg">Xem đánh giá (03)</span><span class="write-comment"><img src="img/pencil.svg">Viết đánh giá (02)</span></span>
+        <h1>Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa</h1>
+        <span class="options row align-items-center"><span class="rate row align-items-center"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg"></span><span class="comments row align-items-center"><img src="img/comment.svg">Bình luận (03)</span><span class="write-comment row align-items-center"><img src="img/pencil.svg">Đánh giá (02)</span></span>
         <span class="options row align-items-end">
-          <select class="number">
-            <option value="1">1</option>
-          </select><span class="price-new">3.000.000đ</span><span class="price-old">5.000.000đ</span></span>
+         <span class="price-new">3.000.000đ</span><span class="price-old">5.000.000đ</span></span>
         <ul class="description">
           <li class="row align-items-center"><span>Hãng sản xuất:</span><img src="img/hang.svg" alt=""></li>
           <li><span>Xuất xứ: </span>Đức</li>
@@ -182,13 +197,15 @@
           </div>
         </div>
       </div>
-      <div class="detail thongtinsanpham">
+      <div class="detail">
         <div class="radio">
           <audio controls="">
             <source src="horse.ogg" type="audio/ogg">
             <source src="horse.mp3" type="audio/mpeg">Your browser does not support the audio element.
           </audio>
         </div>
+      </div>
+      <div class="detail thongtinsanpham">
         <div class="content" style="height: 1000px; overflow: hidden">
           <div style="display: block; background: #26ae25; color: #ffffff; padding: 10px; text-align: justify;">
             <p style="text-align: justify;"><strong><em><span style="font-family: helvetica, arial, sans-serif; color: #ffffff;"><a style="color: #ffffff;" href="https://dangcapphaidep.vn/kem-chong-nang-image-spf50-prevention.html">Kem chống nắng Image SPF 50</a> là b</span>iện pháp bảo vệ tối ưu làn da hỗn hợp trước tác hại của tia cực tím, đồng thời nuôi dưỡng làn da khỏe mạnh, giúp da trắng sáng và đẩy lùi lão hóa cấp kì mà không gây bất kì kích ứng nào cho da.</em></strong></p>
@@ -411,7 +428,9 @@
                 <div class="right">
                   <div class="name">
                     <h5>Nguyễn Mạnh Linh<img src="img/camketchinhhang.svg"><span>Đã mua hàng</span></h5>
-                    <div class="rate"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg"></div>
+                    <div class="rate">
+                      <img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg">
+                    </div>
                     <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                       <div class="popup-gallery"><a> <img class="gallery2" src="https://unsplash.it/1200/800?image=841"></a><a> <img class="gallery2" src="https://unsplash.it/1200/800?image=841"></a><a> <img class="gallery2" src="https://unsplash.it/1200/800?image=841"></a></div>
                     </div>
@@ -627,7 +646,7 @@
         });
         setTimeout(() => {
           $(".popup-pro").addClass("active");
-        }, 5000);
+        }, 500000);
         $(".popup-pro .close").click(function(e){
           $(".popup-pro").removeClass("active");
         })
