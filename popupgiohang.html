@@ -735,13 +735,13 @@
       <span class="close"><img src="img/closepopup.png" alt=""></span>
       <div class="ct text-center">
       <h3>Mã OTP của tôi</h3>
-      <form>
+      <form class="row justify-content-between">
         <input type="text" class="number1" />
         <input type="text" class="number2"/>
         <input type="text" class="number3"/>
         <input type="text" class="number4"/>
       </form>
-      <p>Hãy kiểm tra tin nhắn, chúng tôi vừa gửi <strong>OTP</strong> đến số <br/><strong>0906456789</strong>
+      <p>Hãy kiểm tra tin nhắn, chúng tôi vừa gửi <strong>OTP</strong> đến số <strong>0906456789</strong>
       </p>
       <div class="send-otp">
         <p>Yêu cầu gửi lại sau <span id="countdown">30s</span></p>
@@ -794,8 +794,25 @@
         $(".bgpopup").show();
         $(".popup-giohang-dn").hide();
         $('.popup-ma-otp').css("display","flex");
-    
       })
+      $(".popup-ma-otp .close").click(function(e){
+        $(".bgpopup").hide();
+        $(".popup-ma-otp ").hide();
+      })
+      function ProgressCountdown(timeleft) {
+        return new Promise((resolve, reject) => {
+          var countdownTimer = setInterval(() => {
+            timeleft--;
+            $("#countdown").html(timeleft+"s");
+            if (timeleft <= 0) {
+              clearInterval(countdownTimer);
+              resolve(true);
+              $(".send-otp p").hide();
+              $(".send-otp a").css("display","flex");
+            }
+          }, 1000);
+        });
+      }
     </script>
   </body>
 </html>
