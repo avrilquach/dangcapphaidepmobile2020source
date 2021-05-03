@@ -5862,6 +5862,14 @@ img {
   position: relative;
   background: #fff;
 }
+.gallery .item .playvideo img{
+  width: auto;
+}
+.gallery .item .playvideo {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
 .detail .quatang{
   margin-bottom: 20px;
 }
