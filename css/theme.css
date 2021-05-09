@@ -5871,7 +5871,7 @@ img {
   right: 15px;
 }
 .detail .quatang{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .detail .quatang span{
   font-size: 16px;
@@ -9569,4 +9569,485 @@ padding: 5px 0;
   margin: 0;
   height: 130px;
   border-radius: 5px;
+}
+.popupkm {
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  padding: 15px;
+  z-index: 91;
+  display: none;
+  max-width: 418px;
+  height: 100%;
+}
+.popupkm button.end {
+  background: #4B4B4B;
+  border-radius: 5px;
+  width: 100%;
+  height: 47px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+}
+.popupkm .head {
+  margin-bottom: 10px;
+}
+.popupkm h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+.popupkm .form {
+  background: #F5F5F5;
+  border-radius: 5px;
+  padding: 15px 0;
+  position: relative;
+  margin-bottom: 15px;
+}
+.popupkm .form img{
+  position: absolute;
+  top: 26px;
+  left: 10px;
+}
+.popupkm .form input {
+  background: #FFFFFF;
+  border: 0.5px solid #8B8B8B;
+  border-radius: 5px;
+  width: calc(100% - 100px);
+  height: 40px;
+  padding: 0 10px 0 40px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #a3a3a3;
+}
+.popupkm .form button {
+  background: #2C2C2C;
+  border-radius: 5px;
+  width: 88px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+}
+.popupkm .list .item {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  height: 100px;  
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #C4C4C4;
+}
+.popupkm .list .item .row{
+  width: 100%;
+  padding: 0 20px;
+
+}
+.popupkm .list .item::before, .popupkm .list .item::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent #C4C4C4 #C4C4C4 transparent;
+  border-image: initial;
+  position: absolute;
+  top: 42px;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+.popupkm .list .item::before {
+  left: -16px;
+  transform: rotate( 
+-45deg
+);
+}
+.popupkm .list .item::after {
+  right: -16px;
+  transform: rotate( 
+135deg
+);
+}
+.popupkm .list .item .left {
+  width: calc(100% - 115px);
+  position: relative;
+  border-right: 1px dashed #D2D2D2;
+  padding: 0 10px 0 0;
+}
+.popupkm .list .item .left span.top {
+  position: relative;
+  width: calc(100% - 26px);
+}
+.popupkm .list .item .left span.top span:nth-child(1) {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  display: block;
+}
+.popupkm .list .item .left span.top span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+
+}
+.popupkm .list .item .left span.top span:nth-child(3) {
+  font-size: 13px;
+  font-weight: 300;
+  color: #878787;
+  display: block;
+}
+.popupkm .list .item .left .img1 {
+  position: absolute;
+  top: -10px;
+  right: -35px;
+}
+.popupkm .list .item .left .chuy {
+  position: relative;
+}
+.popupkm .list .item .left .chuy.active .note {
+  display: block;
+}
+.popupkm .list .item .left .chuy .note {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  z-index: 10;
+  left: -185px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 320px;
+  height: 175px;
+  margin-top: 10px;
+}
+.popupkm .list .item .left .chuy .note .top{
+  background: #F5F5F5;
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+.popupkm .list .item .left .chuy .note .top span:first-child{
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+}
+.popupkm .list .item .left .chuy .note .top span:nth-child(2){
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  margin-left: 20px;
+}
+.popupkm .list .item .left .chuy .note .middle{
+  padding: 10px 20px;
+}
+.popupkm .list .item .left .chuy .note .middle span:first-child,.popupkm .list .item .left .chuy .note .bottom span:first-child{
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+  text-decoration: underline;
+}
+.popupkm .list .item .left .chuy .note .middle span:last-child{
+  font-size: 15px;
+  font-weight: 300;
+  color: #5A5A5A;
+  margin-left: 20px;
+}
+
+.popupkm .list .item .left .chuy .note .top img{
+  margin-left: 20px;
+}
+.popupkm .list .item .left .chuy .note::before{
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  top: -10px;
+  left: 187px;
+  position: absolute;
+}
+.popupkm .list .item .left .chuy .note .top span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #525252;
+  margin-right: 20px;
+}
+.popupkm .list .item .left .chuy .note .top span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.popupkm .list .item .left .chuy .note .bottom {
+  padding: 0 20px 10px 20px;
+}
+.popupkm .list .item .left .chuy .note .bottom p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.popupkm .list .item .right{
+  width: 100px;
+  margin-right: 5px;
+}
+.popupkm .list .item .right img{
+  margin: 0 auto;
+  width: 100%;
+}
+.popupkm .list .item .right button{
+  background: #2457B6;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: none; 
+}
+.detail .coupon .item::after {
+  right: -6px;
+  transform: rotate(
+135deg
+);
+}
+.detail .coupon .item::before, .detail .coupon .item::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent #FE2B6D #FE2B6D transparent;
+  border-image: initial;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+.detail .coupon .item::before{
+  left: -6px;
+  transform: rotate(
+-45deg
+);
+}
+.detail .coupon .item {
+  cursor: pointer;
+    padding: 3px 20px;
+    border: 1px solid #FE2B6D;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #FE2B6D;
+    position: relative;
+    margin: 8px 12px 0px 0px;
+}
+.detail .coupon{
+  margin-bottom: 20px;
+}
+.detail .coupon li{
+  width: auto;
+}
+.popup-review {
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  max-width: 418px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  z-index: 91;
+  display: none;
+  height: 100%;
+  overflow: scroll;
+}
+.popup-review #big-review .item img{
+  width: 493px;
+  height: 385px;
+  border-radius: 5px;
+}
+.popup-review #big-review {
+  margin-bottom: 20px;
+}
+.popup-review #thumbs-review .item img{
+  width: 110px;
+  height: 80px;
+  border-radius: 5px;
+}
+.popup-review #thumbs-review .owl-item.current .item img{
+  border: 2px solid #000;
+}
+.popup-review .comment-item-review{
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.popup-review .comment-item-review .l .rate img{
+  width: 22px;
+  height: 22px;
+}
+.popup-review .comment-item-review .l .time{
+  font-size: 14px;
+  font-weight: 400;
+  color: #636363;
+  display: block;
+  margin-top: 5px;
+}
+.popup-review .comment-item-review .c {
+  margin-top: 10px;
+}
+.popup-review .comment-item-review  .c h4{
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.popup-review .comment-item-review .c p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #212121;
+  margin-bottom: 20px;
+}
+.popup-review .comment-item-review .c .huuich{
+  border: 1px solid #3463B4;
+  border-radius: 5px;
+  padding: 5px;
+}
+.popup-review .comment-item-review .c .huuich img{
+  margin: 0 5px;
+}
+.popup-review .comment-item-review .c .huuich span{
+  font-size: 14px;
+  font-weight: 600;
+  color: #3463B4;
+}
+.popup-review .comment-item-review .c .guitraloi{
+  color: #3463B4;
+  font-size: 14px;
+  font-weight: 600;  
+  margin-left: 10px;
+}
+.popup-review .comment-item-review .r .img img{
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+}
+.popup-review .comment-item-review .r .text{
+  width: calc(100% - 52px);
+}
+.popup-review .comment-item-review .r .text .name{
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+.popup-review .comment-item-review .r .text .time{
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+  display: block;
+}
+.popup-review .comment-item-review .c .replay{
+  margin-top: 10px;
+  display: none;
+}
+.popup-review .comment-item-review .c.active .replay{
+  display: flex;
+}
+.popup-review .comment-item-review .c .replay .img img{
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+}
+.popup-review .comment-item-review .c .replay .box {
+  width: calc(100% - 52px);
+  position: relative;
+}
+.popup-review .comment-item-review .c .replay .box input{
+  background: #FFFFFF;
+  border: 1px solid #9C9C9C;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  padding: 0 10px;
+}
+.popup-review .comment-item-review .c .replay .box button{
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: transparent;
+  outline: none;
+}
+.popup-review .comment-item-review .c  .popup-gallery img{
+  width: 100%;
+  margin: 0;
+  height: 130px;
+  border-radius: 5px;
+}
+.popup-review-product{
+}
+.comment-item-review{
+  padding: 15px;
+}
+.popup-review .comment-item-review .r{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E9E9E9;
+}
+.popup-review .head{
+  padding: 15px;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 10px;
+}
+.popup-review .head h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  padding-right: 30px;
+}
+.popup-review .head span.close{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.popup-review .owl-nav .owl-prev{
+  background: url(../img/review-prev.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: -230px;
+    text-indent: -9999px;
+}
+.popup-review .owl-nav .owl-next{
+  background: url(../img/review-next.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: -230px;
+    text-indent: -9999px;
+}
+.popup-review #thumbs-review{
+  padding: 0 15px;
 }
