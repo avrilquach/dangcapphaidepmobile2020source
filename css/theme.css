@@ -166,7 +166,7 @@ img {
 
 #wrapper_mobile {
   width: 100%;
-  max-width: 418px;
+  max-width: 768px;
   margin: 0 auto;
   background-color: #ebebeb;
   position: relative;
@@ -3110,6 +3110,7 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 768px;
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
@@ -3120,6 +3121,8 @@ img {
   align-items: center;
   padding: 0 15px;
   box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  right: 0;
 }
 .nav-fix-bt-detail .item:first-child, .nav-fix-bt-detail .item:nth-child(2) {
   width: calc(15% - 10px);
@@ -3156,7 +3159,7 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 418px;
+  max-width: 768px;
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
@@ -3325,7 +3328,7 @@ img {
   position: fixed;
   z-index: 8;
   transition: 0.1s ease-out;
-  bottom: -100%;
+  bottom: -1200px;
 }
 .popup-giaohang .all {
   position: fixed;
@@ -3449,7 +3452,7 @@ img {
   position: fixed;
   z-index: 8;
   transition: 0.1s ease-out;
-  bottom: -1000px;
+  bottom: -1200px;
 }
 .popup-diachi .all {
   position: fixed;
@@ -3551,7 +3554,7 @@ img {
   position: fixed;
   z-index: 8;
   transition: 0.1s ease-out;
-  bottom: -100%;
+  bottom: -1200px;
 }
 .popup-thong-tin-hoa-don .all {
   position: fixed;
@@ -3646,7 +3649,7 @@ img {
   position: fixed;
   z-index: 8;
   transition: 0.1s ease-out;
-  bottom: -100%;
+  bottom: -1200px;
 }
 .popup-ghi-chu-don-hang .all {
   position: fixed;
@@ -3743,7 +3746,7 @@ img {
   position: fixed;
   z-index: 10;
   transition: 0.1s ease-out;
-  bottom: -1000px;
+  bottom: -1200px;
 }
 
 .popup-tinh-thanh-pho .all, .popup-quan-huyen .all, .popup-phuong-xa .all {
@@ -8922,9 +8925,10 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-}
+}   
 .news-top .item .img img {
   border-radius: 10px;
+  width: 100%;
 }
 .news-top .item .caption {
   position: absolute;
@@ -8972,6 +8976,7 @@ img {
 .news_style img.main{
   border-radius: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .news_style ul li{
   font-size: 14px;
@@ -9171,7 +9176,10 @@ img {
 }
 .news-detail .centernews .style1{
   position: relative;
-  margin-bottom: 30%;
+  margin-bottom: 100px;
+}
+.news-detail .centernews .style1 > img{
+  width: 100%;
 }
 .news-detail .centernews .style1 .text{
   background: #FFFFFF;
@@ -9180,7 +9188,7 @@ img {
   padding: 15px;
   margin: 15px;
   position: absolute;
-  bottom: -50%;
+  bottom: -100px;
 }
 .news-detail{
   background-color: #fff;
@@ -9231,7 +9239,8 @@ img {
   margin-bottom: 10px;
 }
 .news-detail .centernews .style3 .ct img{
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  display: block;
 }
 .news-detail .product-news .contentproduct  .item{
   width: calc(33% - 15px);
@@ -9871,7 +9880,7 @@ padding: 5px 0;
   position: fixed;
   background: #FFFFFF;
   width: 100%;
-  max-width: 418px;
+  max-width: 768px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -9882,15 +9891,15 @@ padding: 5px 0;
   overflow: scroll;
 }
 .popup-review #big-review .item img{
-  width: 493px;
-  height: 385px;
+  width: 100%;
+  height: 400px;
   border-radius: 5px;
 }
 .popup-review #big-review {
   margin-bottom: 20px;
 }
 .popup-review #thumbs-review .item img{
-  width: 110px;
+  width: 100%;
   height: 80px;
   border-radius: 5px;
 }
@@ -10050,4 +10059,17 @@ padding: 5px 0;
 }
 .popup-review #thumbs-review{
   padding: 0 15px;
+}
+#wrapper_mobile .products.cate ul li.swiper-slide {
+  margin-bottom: 10px !important;
+}
+@media(max-width: 768px)
+{
+  
+  #wrapper_mobile .products.cate ul li.swiper-slide:nth-child(even),#wrapper_mobile .products.cate ul li.swiper-slide:nth-child(odd){
+    margin: 0 5px 10px 5px !important
+  }
+  #wrapper_mobile .products.cate ul li.swiper-slide{
+    width: 31.33%;
+  }
 }
