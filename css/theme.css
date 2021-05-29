@@ -10073,3 +10073,217 @@ padding: 5px 0;
     width: 31.33%;
   }
 }
+.showroom ul li{
+  margin-left: 15px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.showroom ul li img{
+  border-radius: 5px;
+}
+.videos-top .item .img {
+  position: relative;
+  display: block;
+}
+.videos-top .item .img::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 150%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.videos-top .item .caption {
+  position: absolute;
+  bottom: 0;
+  z-index: 14;
+  width: 100%;
+  padding: 15px;
+}
+.videos-top .item .caption .text h2 {
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    color: #fff;
+    height: 40px;
+    overflow: hidden;
+}
+.videos-top .owl-item.active.center {
+  transform: scale(1.5);
+  z-index: 9999;
+}
+.videos-top .item .caption .play{
+  width: 30px;
+}
+.videos-top .item .caption .text {
+  width: calc(100% - 40px);
+  margin-left: 10px;
+}
+.videos-top .owl-carousel .owl-item img{
+  border-radius: 10px;
+}
+.videos-top .content .owl-stage-outer {
+  padding: 15% 0;
+}
+.videos-top{
+  margin-bottom: 10px;
+}
+.videos-main{
+  padding: 15px 0;
+}
+.news_style h2.style1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+  line-height: 25px;
+  margin-bottom: 10px;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.news_style .col-md-3 h2.style1{
+  font-size: 15px;
+}
+.news_style img.main{
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.news_style ul li{
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+  margin-right: 10px;
+}
+.news_style ul li img{
+  margin-right: 5px;
+}
+.news_style a{
+  margin-bottom: 30px;
+  display: block; 
+}
+.news_style .inner{
+  position: relative;
+}
+.news_style img.play{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+.news_style .col-md-3 img.play{
+  width: 42px;
+  height: 42px;
+}
+.news_style{
+  display: inline-block;
+}
+.news_style .col-md-3.item{
+  width: 50%;
+  float: left;
+}
+.news_style .col-md-3.item:nth-child(odd){
+  padding: 0 7.5px 0 15px ;
+}
+.news_style .col-md-3.item:nth-child(even){
+  padding: 0 15px 0 7.5px ;
+}
+.videos-main .main2{
+  background-color: #fff;
+  padding: 15px 0 0 0;
+  margin-bottom: 10px;
+}
+.news_style .col-md-6.item{
+  padding: 0 15px;
+}
+.videos-main .news_style a{
+  margin-bottom: 10px;
+}
+
+.main-thuonghieu2 .inner{
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.main-thuonghieu2 .inner .branch-th{
+  display: inline-block;
+  width: 100%;
+}
+.main-thuonghieu2 .inner .branch-th .item{
+  width: 48%;
+  float: left;
+  margin: 1%;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.all-thuonghieu {
+  padding-top: 20px;
+}
+.all-thuonghieu .head {
+  border-bottom: 1px solid #DCDCDC;
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.all-thuonghieu .head ul li{
+  width: 11.1%;
+  float: left;
+}
+.all-thuonghieu .head ul li a{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.all-thuonghieu h2{
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.all-thuonghieu .bodyct .item{
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #DCDCDC;
+}
+.all-thuonghieu .bodyct .item > span{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  width: 11.1%;
+  padding-right: 1%;
+}
+.all-thuonghieu .bodyct .item ul {
+  width: 100% ;
+}
+.all-thuonghieu .bodyct .item ul li {
+  width: 49%;
+  float: left;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  align-items: center ;
+}
+.all-thuonghieu .bodyct .item ul li a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.all-thuonghieu .bodyct .item ul li span{
+  background: #FF326C;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: 60;
+  padding: 3px 5px;
+  color: #fff;
+}
